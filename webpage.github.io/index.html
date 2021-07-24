@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>
+		welcometoapasdiital
+		
+	</title>
+	<link rel="stylesheet" href="CSSS/colrs.css">
+
+</head>
+<body>
+
+	<div class="hero">
+		<div class="form-box">
+			<h1>WELCOME TO APAS DIGITAL</h1>
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-button" onclick="login()">login</button>
+		        <button type="button" class="toggle-button" onclick="register()">register</button>
+			</div>
+
+			<form  id="login"  class="input-group">
+				<input type="email adress" class="input-field" placeholder="user id" required>
+		
+			    <input type="password" class="input-field" placeholder="user password" required>
+			    
+			    <p><input type="checkbox" class="checkbox">Remember me?</p>
+			    <button type="submit" class="submit-btn">login</button>
+			    <p class="social-accounts">
+			        <button type="button" class="sign-in-btn">login with google account</button>
+				    <button type="button" class="sign-in-btn">login with facebook</button>
+			    </p>
+			</form>
+			
+			<form id="register" class="input-group">
+				<input type="name" class="input-field" placeholder="your name" required>
+
+			    <input type="institute" class="input-field" placeholder="institute name" required>
+
+		        <input type="email" class="input-field" placeholder="your email" required>
+		        <input type=" large number" class="input-field" placeholder="your contact" required>
+		        <input type="password" class="input-field" placeholder="create password" required>
+
+		        <p><input type="checkbox" class="checkbox"><span>i accept the terms and conditions</span></p>			
+				<button type="submit" class="submit-btn">sign up</button>
+				
+				
+			</form>
+
+			
+		</div>
+	</div>
+    <script>
+    	var x = document.getElementById("login");
+    	var y = document.getElementById("register");
+    	var z = document.getElementById("btn");
+    	function register(){
+    		x.style.left="-400px";
+    		y.style.left="50px";
+    		z.style.left="110px";
+
+    	}
+        function login(){
+    		x.style.left="50px";
+    		y.style.left="450px";
+    		z.style.left="0";
+    	}
+
+
+    </script>
+
+</body>
+</html>
